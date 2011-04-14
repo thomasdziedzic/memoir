@@ -1,0 +1,15 @@
+memoir is intended to be a minimal cli diary.
+
+Usage:
+Run memoir by typing 'mm' into a terminal.
+Type out your memoir, and it will write the entry to '~/.memoir' and exit as soon as an empty line is encountered.
+If the first line is empty, it wont write they entry.
+You can also send a SIGINT to exit the program without side effects.
+
+Format of '~/.memoir':
+date
+entry
+Entries are seperated by a line of dashes.
+
+Dependencies:
+python3
