@@ -2,17 +2,23 @@
 
 import time
 import os
+import sys
 
+# add the current local time to the entry header
 lines = [ time.asctime() + '\n' ]
 
-while 1:
-    line = input()
+if len( sys.argv ) > 1:
+    lines += sys.argv[1:]
+    lines[-1] += '\n'
+else:
+    while 1:
+        line = input()
 
-    # get more user input until an empty line
-    if len( line ) == 0:
-        break
-    else:
-        lines.append( line + '\n' )
+        # get more user input until an empty line
+        if len( line ) == 0:
+            break
+        else:
+            lines.append( line + '\n' )
 
 
 # only write the entry if the user entered something

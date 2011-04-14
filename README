@@ -3,8 +3,11 @@ memoir is intended to be a minimal cli diary.
 Usage:
 Run memoir by typing 'm' into a terminal.
 Type out your memoir, and it will write the entry to '~/.memoir' and exit as soon as an empty line is encountered.
-If the first line is empty, it wont write they entry.
+If the first line is empty, it wont write the entry.
 You can also send a SIGINT to exit the program without side effects.
+
+Alternatively, you can run 'm' with any number of arguments.
+Once you run 'm' with the arguments, it will automatically add a one line entry to '~/.memoir'.
 
 Format of '~/.memoir':
 date
