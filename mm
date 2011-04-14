@@ -3,7 +3,7 @@
 import time
 import os
 
-lines = [ time.asctime() ]
+lines = [ time.asctime() + '\n' ]
 
 while 1:
     line = input()
