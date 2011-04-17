@@ -8,7 +8,7 @@ import sys
 lines = [ time.asctime() + '\n' ]
 
 if len( sys.argv ) > 1:
-    lines += sys.argv[1:]
+    lines.append( ' '.join( sys.argv[ 1: ] ) )
     lines[-1] += '\n'
 else:
     while 1:
