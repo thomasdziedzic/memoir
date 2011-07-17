@@ -12,7 +12,10 @@ if len( sys.argv ) > 1:
     lines[-1] += '\n'
 else:
     while 1:
-        line = input()
+        try:
+            line = input()
+        except EOFError:
+            break
 
         # get more user input until an empty line
         if len( line ) == 0:
